@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=1200, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>EPT Test FB Post Plugin</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="fb-root"></div>
@@ -73,17 +73,6 @@
           }
         });
       });
-
-      const http = new XMLHttpRequest();
-
-      const url =
-        "https://graph.facebook.com/154274247982559/feed?access_token=EAAHGObbqpEEBAAdGWMvGX45N2oW6lNa5u461xyf8HaFDma4iXhgabNV6wKBv01GCHWz4Um7KP7W4CAnhXJ7zsNTCqc6iSNX6iiKVcEkga1idAmKliaoJdIMSwSfiYbarnLyPZAEm33ODR7mPMutcRh98AbNs1KZCmYnNZBGxs2IW48KaCNayBbqO6uGT2FcZA9h17iQp6XZBvcu1SZBpBE";
-      http.open("GET", url);
-      http.send();
-
-      http.onreadystatechange = e => {
-        console.log(http.responseText);
-      };
     </script>
   </body>
 </html>
