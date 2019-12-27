@@ -80,7 +80,9 @@
             console.log(data.data);
             let url = data.data[0].permalink_url;
             console.log(url);
-            $("#post").append(`<div class="fb-post" data-href="${url}"></div>`);
+            $("#post").append(
+              `<div class="fb-post" data-width="300" data-href="${url}"></div>`
+            );
           }
         });
       });
