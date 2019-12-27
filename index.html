@@ -72,11 +72,10 @@
       $(document).ready(function() {
         $.ajax({
           url:
-            "https://graph.facebook.com/154274247982559/feed?limit=1&access_token=EAAHGObbqpEEBAAdGWMvGX45N2oW6lNa5u461xyf8HaFDma4iXhgabNV6wKBv01GCHWz4Um7KP7W4CAnhXJ7zsNTCqc6iSNX6iiKVcEkga1idAmKliaoJdIMSwSfiYbarnLyPZAEm33ODR7mPMutcRh98AbNs1KZCmYnNZBGxs2IW48KaCNayBbqO6uGT2FcZA9h17iQp6XZBvcu1SZBpBE",
+            "https://graph.facebook.com/154274247982559/feed?fields=permalink_url&access_token=EAAHGObbqpEEBAAdGWMvGX45N2oW6lNa5u461xyf8HaFDma4iXhgabNV6wKBv01GCHWz4Um7KP7W4CAnhXJ7zsNTCqc6iSNX6iiKVcEkga1idAmKliaoJdIMSwSfiYbarnLyPZAEm33ODR7mPMutcRh98AbNs1KZCmYnNZBGxs2IW48KaCNayBbqO6uGT2FcZA9h17iQp6XZBvcu1SZBpBE",
           type: "GET",
           success: function(data) {
             console.log(data);
-            $("#caption").append(data[0].message);
           }
         });
       });
