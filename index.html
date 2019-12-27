@@ -76,7 +76,7 @@
           type: "GET",
           success: function(data) {
             console.log(data.data);
-            let url = data.data[0].permalink_url;
+            let url = data.data[0].permalink_url.split("?")[1];
             console.log(url);
             $("#post").append(
               `<div class="fb-post" data-width="300" data-href="${url}"></div>`
