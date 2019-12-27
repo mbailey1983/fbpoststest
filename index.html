@@ -66,7 +66,7 @@
     </section>
 
     <section id="post">
-      <div id="post"></div>
+      <div id="fbpost"></div>
     </section>
     <script>
       $(document).ready(function() {
@@ -78,7 +78,7 @@
             console.log(data.data);
             let url = data.data[0].permalink_url.split("?")[0];
             console.log(url);
-            $("#post").append(
+            $("#fbpost").append(
               '<div class="fb-post" data-width="350" data-href="' +
                 url +
                 '"></div>'
