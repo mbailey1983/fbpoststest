@@ -50,7 +50,7 @@
     </section>
 
     <section id="post">
-      <div id="fbpost"></div>
+      <ul id="fbpost"></ul>
     </section>
     <script>
       $(document).ready(function() {
@@ -63,9 +63,9 @@
             let url = data.data[0].permalink_url.split("?")[0];
             console.log(url);
             $("#fbpost").append(
-              '<div class="fb-post" data-width="350" data-href="' +
+              '<li><div class="fb-post" data-width="350" data-href="' +
                 url +
-                '"></div>'
+                '"></div></li>'
             );
           }
         });
